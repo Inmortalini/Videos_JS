@@ -1,0 +1,36 @@
+* {
+  background-color: linen;
+}
+.main-container {
+    display: flex;
+    flex-direction: column; /* establece la dirección de los elementos en columna */
+    align-items: center; /* alinea los elementos en el centro del eje transversal */
+    justify-content: center; /* alinea los elementos en el centro del eje principal */
+    height: 100vh; /* establece el alto del contenedor principal en la altura de la pantalla */
+}
+.main-container .title {
+    margin-top: 14px;
+   z-index: 5;
+    margin-bottom: 50px; /* elimina el margen inferior del título */
+    border: 4mm ridge rgba(211, 220, 50, .6);
+    width: 44%;
+}
+
+.main-container .container {
+    width: 80%; /* establece el ancho del contenedor de contenido en un 80% */
+    text-align: center; /* centra el contenido dentro del contenedor */
+    display: flex;
+    flex-direction: column; /* establece la dirección de los elementos en columna */
+    align-items: center; /* alinea los elementos en el centro del eje transversal */
+    justify-content: center; 
+}
+.container button {
+    width: 59%; /* establece el ancho del contenedor del botón en un 80% */
+    margin-top: 50px; /* agrega un margen superior al contenedor del botón */
+    text-align: center; /* centra el botón dentro del contenedor */
+    background-color:rgba(211, 220, 50, .6);
+}
+
+video {
+  transform: scale(1.5); /* Aumenta el tamaño del video en un 50% */
+}

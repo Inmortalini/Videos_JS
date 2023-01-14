@@ -1,14 +1,24 @@
-const video=document.querySelector("video");
-const button=document.querySelector('button');
-function mediaPlayer(config){
-    this.media=config.opa
-};
-mediaPlayer.prototype.go=function(){
-    if(this.media.paused){
-        this.media.play()
-    }else{
-        this.media.pause()
-    }
-}
-const player=new mediaPlayer({opa:video});
-button.onclick=()=> player.go();
+import mediaPlayer from "./MediaPlayer.js";
+
+// import { temp1, temp2 } from './MediaPlayer.js';
+// console.log(temp1)
+// console.log(mediaPlayer);
+
+const video = document.querySelector("video");
+const player = new mediaPlayer({ el: video });
+
+const button = document.querySelector("button");
+button.onclick = () => player.togglePlay();
+
+function counter() {
+  let count = 0;
+  console.log("count")
+  return{
+    incremento:function(n){
+        count++;
+    },
+    decremento:function(n){count--;},
+    getCount:function(){  console.log(count)}
+  }}
+var clousere=counter();
+clousere(5)
